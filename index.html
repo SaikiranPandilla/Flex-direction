@@ -10,18 +10,25 @@
   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
   -->
   <style>
+     <style>
     .container {
       
       color: white;
       border: 5px solid gold;
-      display: inlineflex;
-      flex-basis: column;
+      display: inline-flex;
+      flex-direction: column;
+      
     }
 
     /*
 Select all the elements that are the direct
 children of the .container class.
     */
+    .container > *
+    {
+      flex-basis: 150px;
+    }
+
 
     .red {background-color: #eb4d4b;}
     .orange {background-color: #f0932b;}
